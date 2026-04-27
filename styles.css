@@ -171,6 +171,5 @@ h2 {
 }
 
 .nav-links a:not(.current):hover {
-  background-color: #e5f1fb;
   border-radius: 999px;
 }
