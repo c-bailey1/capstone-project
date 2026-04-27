@@ -154,3 +154,23 @@ h2 {
   }
 }
 
+/* Pill-style current nav item */
+.nav-links a.current {
+  background-color: #0078d4; /* Microsoft blue */
+  color: #ffffff;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px; /* pill shape */
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Optional hover effect for non-current links */
+.nav-links a {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:not(.current):hover {
+  background-color: #e5f1fb;
+  border-radius: 999px;
+}
