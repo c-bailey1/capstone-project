@@ -1,84 +1,104 @@
+
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Sticky Navigation */
+/* Sticky Nav */
 .nav {
-  position: sticky;
-  top: 0;
-  background-color: #00356b;
-  color: white;
-  padding: 15px 25px;
-  font-size: 18px;
-  z-index: 1000;
+  position: sticky;
+  top: 0;
+  background-color: #00356b;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  z-index: 1000;
 }
 
 .nav-title {
-  font-weight: bold;
+  font-weight: bold;
 }
 
-/* Content Area */
+/* Page Content */
 .content {
-  background-color: #f9f9f9;
-  padding: 30px;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
-  margin-top: 0;
+  margin-top: 0;
 }
 
-/* Module Grid */
+/* Vertical Module List */
 .modules {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+  width: 100%;
+  max-width: 900px;
 }
 
-/* Module Cards */
+/* Module Card */
 .module {
-  background: white;
-  padding: 20px;
-  border-radius: 4px;
+  display: flex;
+  background: white;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
-.module h3 {
-  margin-top: 0;
+/* Module Image */
+.module img {
+  width: 160px;
+  height: auto;
+  object-fit: cover;
 }
 
-/* Module Links */
-.module a {
-  display: block;
-  margin-top: 15px;
-  padding: 10px;
-  background-color: #00356b;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 4px;
+/* Module Text */
+.module-text {
+  padding: 20px;
+  flex: 1;
 }
 
-.module a:hover {
-  background-color: #002a55;
+.module-text h3 {
+  margin-top: 0;
 }
 
-/* Resources Section */
+/* Button */
+.module-text a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #00356b;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.module-text a:hover {
+  background-color: #002a55;
+}
+
+/* Resources */
 .resources {
-  background-color: #978d85;
-  color: white;
-  padding: 20px 30px;
+  background-color: #978d85;
+  color: white;
+  padding: 20px 30px;
 }
 
 .resources a {
-  color: white;
-  text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
-/* Mobile Spacing */
-@media (max-width: 600px) {
-  .content,
-  .resources {
-    padding: 20px;
-  }
+/* Mobile Friendly */
+@media (max-width: 700px) {
+  .module {
+    flex-direction: column;
+  }
+
+  .module img {
+    width: 100%;
+    height: 180px;
+  }
 }
