@@ -165,11 +165,3 @@ h2 {
   pointer-events: none;
 }
 
-/* Optional hover effect for non-current links */
-.nav-links a {
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.nav-links a:not(.current):hover {
-  border-radius: 999px;
-}
