@@ -4,7 +4,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Sticky Navigation */
 .nav {
   position: sticky;
   top: 0;
@@ -13,29 +12,19 @@ body {
   padding: 12px 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .nav a {
   color: white;
-  margin-left: 15px;
   text-decoration: none;
-  font-size: 14px;
+  margin-left: 10px;
 }
 
-/* Layout Sections */
 .content {
   background: #f9f9f9;
   padding: 30px;
 }
 
-.resources {
-  background: #978d85;
-  color: white;
-  padding: 20px 30px;
-}
-
-/* Module Grid */
 .modules {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -48,26 +37,22 @@ body {
   border-radius: 4px;
 }
 
-/* Progress Indicators */
+.resources {
+  background: #978d85;
+  color: white;
+  padding: 20px;
+}
+
 .complete { color: green; }
 .progress { color: #c47a00; }
 .locked { color: gray; }
 
-/* Buttons */
 .module a {
   display: block;
   margin-top: 10px;
-  text-align: center;
-  padding: 8px;
   background: #00356b;
   color: white;
+  text-align: center;
+  padding: 8px;
   text-decoration: none;
-  border-radius: 4px;
-}
-
-/* Mobile spacing */
-@media (max-width: 600px) {
-  .content, .resources {
-    padding: 20px;
-  }
 }
