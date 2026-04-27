@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Module 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Sticky Navigation -->
+<div class="nav">
+  <span class="nav-title">Copilot for the Workplace</span>
+</div>
+
+<!-- Module Content -->
+<div class="content">
+
+  <div class="module module-page">
+    <img src="Excel.png" alt="Module 3 Image">
+
+    <div class="module-text">
+      <h2>Module 3: Copilot for Excel</h2>
+
+      <p>
+        This module introduces key concepts and provides an overview of what
+        you will learn. Click below to launch the learning module.
+      </p>
+
+      <a href="https://your-captivate-link.github.io/module3/" target="_blank">
+        Launch Module
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Resources -->
+<div class="resources">
+  <h3 class="resources-title">Assignments & Resources</h3>
+  <ul>
+    <li><a href="assignment1.pdf">Module 3 Assignment</a></li>
+    <li><a href="reading1.pdf">Supplemental Reading</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
